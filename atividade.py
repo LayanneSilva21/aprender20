@@ -42,18 +42,22 @@ display_message()
 #fim da função display_message
 
 #Escreva uma função chamada favorite_book() que aceite um parâmetro title. A função deve exibir uma mensagem como Um dos meus livros favoritos é Alice no país das maravilhas. Chame a função e não
-#se esqueça de incluir o título do livro como argumento na chamada da função.
+#se esqueça de incluir o título do livro como argumento na chamada da função. pag 207 livro de python para iniciantes
 def livro(title):
     print('\nMeu livro favorito é ' + title.title() +'!')
 
 livro('Alice no pais das maravilhas')
 #fim da função livro
+
+#funcao que descreve animais de estimacao pag 207 do livro python para iniciantes
 def descricao_pet(animal_type, pet_name):
     print('Eu tenho um ' + animal_type + '.')
     print('Meu ' + animal_type+ ' se chama ' + pet_name.title() + '.')
 
 descricao_pet('cachorro', 'pluma')
 descricao_pet('cachorro', 'pluto')
+
+#fim da funcao
 
 def descricao_casa(tipo, cor='azul'):
     print('Em teresina eu tenho uma casa de ' + tipo+ ' na cor ' + cor+ '.')
