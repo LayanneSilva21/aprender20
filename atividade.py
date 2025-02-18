@@ -34,17 +34,20 @@ def saudacao_usuario(username):
     print('Olá,' + username.title()+'!')
 
 saudacao_usuario('laiane')
-
+#Escreva uma função chamada display_message() que mostre uma frase informando a todos o que você está aprendendo neste capítulo. Chame a função e certifique-se de que a mensagem seja exibida corretamente.
 def display_message():
     print('\nEstou aprendendo funções!!!!')
 
 display_message()
+#fim da função display_message
 
+#Escreva uma função chamada favorite_book() que aceite um parâmetro title. A função deve exibir uma mensagem como Um dos meus livros favoritos é Alice no país das maravilhas. Chame a função e não
+#se esqueça de incluir o título do livro como argumento na chamada da função.
 def livro(title):
     print('\nMeu livro favorito é ' + title.title() +'!')
 
 livro('Alice no pais das maravilhas')
-
+#fim da função livro
 def descricao_pet(animal_type, pet_name):
     print('Eu tenho um ' + animal_type + '.')
     print('Meu ' + animal_type+ ' se chama ' + pet_name.title() + '.')
