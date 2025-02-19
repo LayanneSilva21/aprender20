@@ -402,3 +402,36 @@ depositar(conta, 100)
 sacar(conta, 50)
 extrato(conta)
 
+#classe pessoas que recebe dados do usuario
+
+class People:
+    def__init__(self):
+        self.nome = None
+        self.idade = None
+
+    def definir_nome(self, nome):
+        self.nome = nome
+        
+    def definir_idade(self, idade):
+        self.idade = idade
+
+    def obter_noome(self):
+        return self.nome
+
+    def obter_idade(self):
+        return self.idade
+
+usuario = Usuario()
+nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+
+usuario.definir_nome(nome)
+usuario.definir_idade(idade)
+
+print(f"Nome: {usuario.obter_nome()}")
+print(f"Idade: {usuario.obter_idade()}")
+
+    
+    
+    
+
