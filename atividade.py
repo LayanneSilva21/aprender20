@@ -404,34 +404,58 @@ extrato(conta)
 
 #classe pessoas que recebe dados do usuario
 
-class People:
-    def__init__(self):
-        self.nome = None
-        self.idade = None
+class People():
+    def __init__(self, nome, idade):
+        self._nome = nome
+        self._idade = idade
 
-    def definir_nome(self, nome):
-        self.nome = nome
+    @property
+    def nome(self):
+        return self._nome
+
+    @nome.setter
+    def nome(self, nome):
+        self._nome = nome
         
-    def definir_idade(self, idade):
-        self.idade = idade
+    @property
+    def idade(self):
+        return self._idade
 
-    def obter_noome(self):
-        return self.nome
+    @idade.setter
+    def idade(self, idade):
+        self._idade = idade
 
-    def obter_idade(self):
-        return self.idade
-
-usuario = Usuario()
+usuario = People()
 nome = input("Digite seu nome: ")
 idade = input("Digite sua idade: ")
 
-usuario.definir_nome(nome)
-usuario.definir_idade(idade)
+usuario.nome = nome
+usuario.idade = idade
 
-print(f"Nome: {usuario.obter_nome()}")
-print(f"Idade: {usuario.obter_idade()}")
+print(f"Nome: {usuario.nome}")
+print(f"Idade: {usuario.idade}")
 
+class Casa():
+    def __init__(self, cor, material, tamanho):
+        self.cor = None
+        self.material =None
+        self.tamanho = None
+
+    def obter_cor(self):
+        return self.cor
     
+    def obter_material(self):
+        return self.material
+
+    def esp_tamanho(self):
+        return esp_tamanho
+
+casa1 = Casa()
+cor = input('Qual a cor da casa? ')
+material = input('Qual o material da casa? ')
+tamanho = input('Qual o tamanho da casa? ')
+
+print(f'A casa é da cor {self.cor}, feita no material {self.material} e com o tamnho de {self.tamanho} M²')
     
     
 
